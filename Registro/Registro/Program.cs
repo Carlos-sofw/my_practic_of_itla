@@ -1,7 +1,5 @@
-﻿class Program
-{
-    static void Main(string[] args)
-    {
+class Program 
+    
         Clinic Clinic = new Clinic();
         bool running = true;
 
@@ -49,4 +47,3 @@
             }
         }
     }
-}
