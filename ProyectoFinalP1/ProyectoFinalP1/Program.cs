@@ -34,16 +34,6 @@ while (true)
             Console.ReadKey();
             break;
 
-        //case 2:
-        //    var books = bll.GetBooks();
-
-        //    foreach (var b in books)
-        //    {
-        //        Console.WriteLine(b.GetInfo());
-        //    }
-
-        //    Console.ReadKey();
-        //    break;
 
         case 2:
             var books = bll.GetBooks();
@@ -56,7 +46,7 @@ while (true)
 
             Console.ResetColor();
 
-            // 🔹 DATOS
+            
             foreach (var b in books)
             {
                 Console.WriteLine(
@@ -66,7 +56,7 @@ while (true)
                 );
             }
 
-            Console.WriteLine("\nPresione cualquier tecla...");
+            Console.WriteLine("\nPresione cualquier tecla para continuar...");
             Console.ReadKey();
             break;
 
