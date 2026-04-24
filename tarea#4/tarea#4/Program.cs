@@ -1,9 +1,5 @@
 ﻿using tarea_4;
 
-class Program
-{
-    static void Main(string[] args)
-    {
         Console.WriteLine("Mi Agenda Perrón");
         Console.WriteLine("Bienvenido a tu lista de contactes");
 
@@ -52,6 +48,3 @@ class Program
                     Console.WriteLine("Opción no válida");
                     break;
             }
-        }
-    }
-}
