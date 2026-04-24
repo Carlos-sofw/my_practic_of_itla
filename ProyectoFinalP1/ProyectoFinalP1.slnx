@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="proyectoFinalP1/TheGreatLogbook.csproj" />
+  <Project Path="TheGreatLogbook.Bll/TheGreatLogbook.Bll.csproj" />
+  <Project Path="TheGreatLogbook.Dele/TheGreatLogbook.Dal.csproj" />
+  <Project Path="TheGreatLogbook.entities/TheGreatLogbook.entities.csproj" />
+</Solution>
