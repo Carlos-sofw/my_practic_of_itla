@@ -80,18 +80,53 @@ while (true)
             Console.ReadKey();
             break;
 
-        case 4:
-            Console.Write("ID a eliminar: ");
-            int del = int.Parse(Console.ReadLine());
+         case 4:
+     Console.Write("ID a eliminar: ");
+     int del = int.Parse(Console.ReadLine());
 
-            bll.DeleteBook(del);
+     Console.WriteLine("Seguro que desea eliminar ese ID (Si o NO)...");
+     string confirmacion = Console.ReadLine();
+     string resultado = !string.IsNullOrEmpty(confirmacion)
+         ? confirmacion.Substring(0, 1).ToUpper():string.Empty;
 
-            Console.WriteLine("Eliminado!");
-            Console.Write("precione cualquier tecla para continuar...");
-            Console.ReadKey();
-            break;
+     if (confirmacion == "n")
+     {
+         return;
+     }
+
+     else
+     {
+
+         bll.DeleteBook(del);
+     }
+
+     Console.WriteLine("Eliminado correctamente!");
+     Console.Write("precione cualquier tecla para continuar...");
+     Console.ReadKey();
+     break;
 
         case 5:
-            return;
+
+    Console.WriteLine("¿Deseas salir del programa? (SI o NO )");
+    string aceptar = Console.ReadLine();
+
+    
+    string confirm = !string.IsNullOrEmpty(aceptar)
+        ? aceptar.Substring(0, 1).ToUpper()
+        : string.Empty;
+
+    
+    if (confirm == "S")
+    {
+        Console.WriteLine("Cerrando programa...");
+        Environment.Exit(0);
+    }
+    else
+    {
+        Console.WriteLine("Operación cancelada. Volviendo al menú...");
+        Console.ReadKey();
+    }
+    break;
+
     }
 }
